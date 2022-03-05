@@ -96,7 +96,7 @@ public class PercentageCalc {
      */
     public void saveToTxt(String name, double total, double score, double percent ) throws IOException{
         String out = name+"\t"+score+"\t"+total+"\t"+percent+"%"+"\n";
-        File file = new File("Calcution Results.txt");
+        File file = new File("Calculation Results.txt");
         try (FileWriter fWriter = new FileWriter(file,true);
         BufferedWriter bWriter = new BufferedWriter(fWriter);) {
             bWriter.write(out);
